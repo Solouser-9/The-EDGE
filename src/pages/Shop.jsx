@@ -6,11 +6,11 @@ const Shop = () => {
   return (
     <div className="shop-page">
   <header className="navbar">
-    <div className="logo">Site name</div>
+    <div className="logo">Site</div>
     <nav className="nav-links">
       <Link to="/article">Article</Link>
-      <Link to="/home">Landing Page</Link>
-      <Link to="/product">Product Details</Link>
+      <Link to="/home">Home</Link>
+      <Link to="/product">Product</Link>
       <Link to="/about">About</Link>
       <button className="nav-btn">Button</button>
     </nav>

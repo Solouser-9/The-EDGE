@@ -6,11 +6,11 @@ const Article = () => {
   return (
     <div className="article-page">
   <header className="navbar">
-    <div className="logo">Site name</div>
+    <div className="logo">Site</div>
     <nav className="nav-links">
-      <Link to="/home">Landing Page</Link>
+      <Link to="/home">Home</Link>
       <Link to="/shop">Shop</Link>
-      <Link to="/product">Product Details</Link>
+      <Link to="/product">Product</Link>
       <Link to="/about">About</Link>
       <button className="nav-btn">Button</button>
     </nav>
