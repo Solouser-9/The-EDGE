@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import Footer from '../components/Footer'
 import '../styles/about.css'
+import aboutImage from '../assets/Eren Yeager - Attack on Titan Tattoo Idea.jpg'
 
 const About = () => {
   return (
@@ -51,7 +52,7 @@ const About = () => {
     </div>
 
     <div className="about-img-col">
-      <img src="https://share.google/UOQpE3QppbGTUOLhU" alt="Person portrait" className="about-main-img"></img>
+      <img src={aboutImage} alt="Person portrait" className="about-main-img"></img>
     </div>
   </section>
   <Footer/>
