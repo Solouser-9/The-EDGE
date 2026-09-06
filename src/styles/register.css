@@ -1,0 +1,241 @@
+@scope (.register-page) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:scope {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #0b061a;
+  color: #F6F1E3;
+}
+main {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+#logo{
+  background-color: #0F0820;
+  color: #F6F1E3;
+  font-family: sans-serif;
+  height: 100vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#logo-container{
+  text-align: left;
+}
+#logo-h1{
+  font-size: 2rem;
+  font-weight: 400;
+}
+#logo-h2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+#form-section {
+  background-color: #130A2A;
+  width: 55vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 5rem;
+}
+#form-container {
+  max-width: 520px;
+  margin: 0 auto;
+}
+#header {
+  margin-bottom: 2rem;
+}
+#header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+#header h4 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #a09cb0;
+}
+#signup-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 1rem;
+  max-width: 520px;
+}
+#signup-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.full-width {
+  grid-column: 1 / -1;
+}
+#signup-form label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+#signup-form input:not([type="checkbox"]) {
+  width: 100%;
+  height: 46px;
+  background-color: #fffde8;
+  border: none;
+  border-radius: 8px;
+  padding: 0 0.85rem;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  outline: none;
+}
+.password-field {
+  position: relative;
+  width: 100%;
+}
+.password-field input {
+  padding-right: 3rem !important;
+}
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.7rem;
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  place-items: center;
+  color: #6f6875;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.password-toggle:hover,
+.password-toggle:focus-visible {
+  color: #1a1a1a;
+  background-color: #eee9d6;
+}
+.password-toggle svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.country-select {
+  position: absolute;
+  left: 6px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  z-index: 2;
+  color: #333;
+}
+.input-group input[type="tel"] {
+  padding-left: 95px !important;
+}
+.terms {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+.terms input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #fffde8;
+  cursor: pointer;
+}
+.terms label {
+  font-size: 0.8rem !important;
+  font-weight: 400 !important;
+  color: #d0d0d0;
+  cursor: pointer;
+}
+.submit-btn {
+  height: 48px;
+  background-color: #d8b056;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: transform 0.1s ease-in-out;
+}
+.submit-btn:hover {
+  transform: translateY(-2px);
+  background-color: #C49A4B;
+}
+.submit-btn:active {
+  transform: scale(0.9);
+}
+.submit-btn:disabled {
+  background-color: #E6D2A8;
+  color: #BFB7A3;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+@media (max-width: 850px) {
+  main {
+    flex-direction: column;
+  }
+  #logo {
+    width: 100%;
+    height: 25vh;
+  }
+  #form-section {
+    width: 100%;
+    height: auto;
+    min-height: 75vh;
+    padding: 2.5rem 1.5rem;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  #header {
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+  #verify-form {
+    width: 100%;
+    max-width: 380px;
+    align-items: center;
+  }
+  .otp-container {
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+  }
+  .otp-container input {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+  .resend-text {
+    text-align: center;
+    width: 100%;
+  }
+  .verify-btn {
+    width: 100%;
+  }
+}
+}
