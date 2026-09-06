@@ -6,7 +6,7 @@ const Article = () => {
   return (
     <div className="article-page">
   <header className="navbar">
-    <div className="logo">TE</div>
+    <div className="logo"><img src = "https://img.icons8.com/ios-filled/50/shopping-cart.png"></img></div>
     <nav className="nav-links">
       <Link to="/home">Home</Link>
       <Link to="/shop">Shop</Link>
