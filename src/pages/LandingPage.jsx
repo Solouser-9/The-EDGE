@@ -6,7 +6,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
   <header className="navbar">
-    <div className="logo">Site</div>
+    <div className="logo">TE</div>
     <nav className="nav-links">
       <Link to="/article">Article</Link>
       <Link to="/shop">Shop</Link>
