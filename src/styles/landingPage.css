@@ -25,7 +25,6 @@
 }
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
 }
@@ -277,18 +276,5 @@
   }
   .hero h1 {
     font-size: 2.5rem;
-  }
-}
-}
-@media (max-width: 600px) {
-  .navbar {
-    gap: 1rem;
-    padding: 1rem 1.25rem;
-  }
-
-  .nav-links {
-    flex: 1 1 100%;
-    justify-content: flex-end;
-    gap: 1rem;
   }
 }
