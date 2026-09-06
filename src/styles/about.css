@@ -12,6 +12,7 @@
 }
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 4rem;
@@ -24,6 +25,7 @@
 }
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
 }
@@ -203,4 +205,16 @@
     margin-top: 2rem;
   }
 }
+}
+@media (max-width: 600px) {
+  .navbar {
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .nav-links {
+    flex: 1 1 100%;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
 }
