@@ -1,10 +1,9 @@
-@scope (.landing-page) {
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:scope {
+.landing-page {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: #111;
   background-color: #fff;
@@ -277,4 +276,3 @@
   .hero h1 {
     font-size: 2.5rem;
   }
-}

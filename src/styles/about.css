@@ -1,10 +1,9 @@
-@scope (.about-page) {
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:scope {
+.about-page {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: #111;
   background-color: #fff;
@@ -203,4 +202,3 @@
     height: 380px;
     margin-top: 2rem;
   }
-}
