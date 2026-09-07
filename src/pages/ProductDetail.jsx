@@ -1,20 +1,11 @@
-import { Link } from "react-router-dom"
 import Footer from '../components/Footer'
+import Nav from "../components/Nav"
 import '../styles/productDetail.css'
 
 const ProductDetail = () => {
   return (
     <div className="product-page">
-  <header className="navbar">
-    <div className="logo"><img src = "https://img.icons8.com/ios-filled/50/shopping-cart.png"></img></div>
-    <nav className="nav-links">
-      <Link to="/article">Article</Link>
-      <Link to="/shop">Shop</Link>
-      <Link to="/home">Home</Link>
-      <Link to="/about">About</Link>
-      <button className="nav-btn">Button</button>
-    </nav>
-  </header>
+  <Nav active="product" />
   <section className="content-section product-hero-section">
     <div className="product-hero-grid">
       <div className="product-img-col">

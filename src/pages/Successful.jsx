@@ -5,8 +5,14 @@ import '../styles/successful.css'
 const Successful = () => {
   const navigate = useNavigate()
 
-  const handleLoginClick = () => {
-    navigate('/login')
+  const Role = localStorage.getItem('role')
+  const handleLoginClick = (e) => {
+    e.preventDefault()
+    if (Role === "Tutor") {
+      navigate('/onboarding')
+    }else if (Role === "Student") {
+      navigate('/login')
+    }
   }
 
   return (

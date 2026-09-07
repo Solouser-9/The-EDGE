@@ -1,20 +1,11 @@
-import { Link } from "react-router-dom"
 import Footer from '../components/Footer'
+import Nav from "../components/Nav"
 import '../styles/shop.css'
 
 const Shop = () => {
   return (
     <div className="shop-page">
-  <header className="navbar">
-    <div className="logo"><img src = "https://img.icons8.com/ios-filled/50/shopping-cart.png"></img></div>
-    <nav className="nav-links">
-      <Link to="/article">Article</Link>
-      <Link to="/home">Home</Link>
-      <Link to="/product">Product</Link>
-      <Link to="/about">About</Link>
-      <button className="nav-btn">Button</button>
-    </nav>
-  </header>
+  <Nav active="shop" />
   <section className="hero shop-hero">
     <div className="hero-bg-img-container">
       <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1400&q=80" alt="Shop Hero Background" className="shop-hero-bg"></img>

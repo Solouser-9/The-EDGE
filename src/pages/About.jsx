@@ -1,21 +1,12 @@
-import { Link } from "react-router-dom"
 import Footer from '../components/Footer'
 import '../styles/about.css'
+import Nav from "../components/Nav"
 import aboutImage from '../assets/Eren Yeager - Attack on Titan Tattoo Idea.jpg'
 
 const About = () => {
   return (
     <div className="about-page">
-  <header className="navbar">
-    <div className="logo"><img src = "https://img.icons8.com/ios-filled/50/shopping-cart.png"></img></div>
-    <nav className="nav-links">
-      <Link to="/article">Article</Link>
-      <Link to="/shop">Shop</Link>
-      <Link to="/product">Products</Link>
-      <Link to="/home">Home</Link>
-      <button className="nav-btn">Button</button>
-    </nav>
-  </header>
+  <Nav active="about" />
   <section className="about-section">
     <div className="about-text-col">
       <h1>About</h1>

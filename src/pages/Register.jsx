@@ -47,6 +47,8 @@ const Register = () => {
     if (isFormValid) {
       localStorage.setItem('registeredEmail', formData.email)
       localStorage.setItem('registeredPassword', formData.password)
+      localStorage.setItem('lastName', formData.lastName)
+      localStorage.setItem('firstName', formData.firstName)
       navigate('/verification')
     }
   }

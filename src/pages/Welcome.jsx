@@ -8,6 +8,7 @@ const Welcome = () => {
   const navigate = useNavigate()
 
   const handleCardClick = (role) => {
+    localStorage.setItem('role', role)
     setSelectedRole(role)
   }
 
@@ -28,7 +29,7 @@ const Welcome = () => {
           <div id="role-selection">
             <article 
               tabIndex="0" 
-              onClick={() => handleCardClick('tutor')}
+              onClick={() => handleCardClick('Tutor')}
               style={{ outline: selectedRole === 'tutor' ? '2px solid #000' : 'none' }}
             >
               <div className="role-circle"></div>
@@ -39,7 +40,7 @@ const Welcome = () => {
             </article>
             <article 
               tabIndex="0" 
-              onClick={() => handleCardClick('student')}
+              onClick={() => handleCardClick('Student')}
               style={{ outline: selectedRole === 'student' ? '2px solid #000' : 'none' }}
             >
               <div className="role-circle"></div>

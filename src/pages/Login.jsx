@@ -11,12 +11,15 @@ const Login = () => {
 
   const registeredEmail = localStorage.getItem('registeredEmail')
   const registeredPassword = localStorage.getItem('registeredPassword')
+  const role = localStorage.getItem('role')
 
   const isLoginValid = email === registeredEmail && password === registeredPassword && registeredEmail !== null
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (isLoginValid) {
+    if ((isLoginValid) && (role === "Tutor")) {
+      navigate('/dashboard')
+    }else if ((isLoginValid) && (role === "Student")) {
       navigate('/home')
     }
   }

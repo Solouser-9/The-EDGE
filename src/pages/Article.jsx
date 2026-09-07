@@ -1,20 +1,11 @@
-import { Link } from "react-router-dom"
 import Footer from '../components/Footer'
+import Nav from "../components/Nav"
 import '../styles/article.css'
 
 const Article = () => {
   return (
     <div className="article-page">
-  <header className="navbar">
-    <div className="logo"><img src = "https://img.icons8.com/ios-filled/50/shopping-cart.png"></img></div>
-    <nav className="nav-links">
-      <Link to="/home">Home</Link>
-      <Link to="/shop">Shop</Link>
-      <Link to="/product">Product</Link>
-      <Link to="/about">About</Link>
-      <button className="nav-btn">Button</button>
-    </nav>
-  </header>
+  <Nav active="article" />
   <section className="hero article-hero">
     <div className="hero-content">
       <h1>Article or post title</h1>
