@@ -1,9 +1,10 @@
+@scope (.shop-page) {
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.shop-page {
+:scope {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: #111;
   background-color: #fff;
@@ -284,4 +285,5 @@
   .card-img.tall {
     height: 300px;
   }
+}
 }

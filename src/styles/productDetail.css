@@ -1,9 +1,10 @@
+@scope (.product-page) {
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.product-page {
+:scope {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: #111;
   background-color: #fff;
@@ -189,4 +190,5 @@
   .product-main-img {
     height: 320px;
   }
+}
 }
